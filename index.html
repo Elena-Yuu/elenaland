@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elenaland</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <h1>Welcome to Elenaland!!</h1>
+
+        <p>Boba bash website for cool people</p>
+
+        <img
+            src="https://nie.res.netease.com/r/pic/20230427/b0403cd5-91d6-4af5-ada0-50a1206e3597.png"   />
+
+        <form onsubmit="checkLogin(event)">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" />
+
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password" />
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="message"></p>
+
+        <br>
+
+        <img
+            id="surpriseImage"
+            src="https://i.redd.it/rtrwejed382h1.gif"
+            alt="Surprise image"
+            width="150"
+            style="display: none;"
+        />
+        <img
+            id="loserimage"
+            src="https://media.tenor.com/hqXwFkYAG_YAAAAM/talking-to-a-wall.gif"
+            alt="Surprise image"
+            width="150"
+            style="display: none;"
+        />
+
+        <script>
+            function checkLogin(event) {
+                event.preventDefault();
+
+                const username =
+                    document.getElementById("username").value;
+
+                const password =
+                    document.getElementById("password").value;
+
+                if (
+                    username === "elenaisthebest" &&
+                    password === "67"
+                ) {
+                    document.getElementById("message").textContent =
+                        "dance if your not a chud";
+
+                    document.getElementById("surpriseImage")
+                        .style.display = "block";
+                } else {
+                    document.getElementById("message").textContent =
+                        "HAHHHAA bum";
+
+                    document.getElementById("loserimage")
+                        .style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>

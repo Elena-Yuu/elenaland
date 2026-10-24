@@ -1,0 +1,9 @@
+img {
+    width:1200px;
+}
+body{
+    text-align:center;
+    font-family:Georgia, 'cursive';
+    background: rgb(218, 172, 145); 
+    color: rgb(144, 80, 49);
+}
